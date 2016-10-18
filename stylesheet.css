@@ -1,0 +1,88 @@
+body{
+    font-family: sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #333;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    font-size: 1.35em;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.75);
+}
+nav > a{
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    color: #cecece;
+    text-decoration: none;
+    margin: 0;
+    padding: 0 10px;
+    transition: all 0.25s;
+}
+nav > a:hover{
+    background-color: rgba(0,0,0,0.75);
+    color: #fefefe;
+    transition: all 0.25s;
+}
+#home_link{
+    font-size: 1.45em;
+    font-weight: 600;
+    color: #dedede;
+}
+
+header{
+    height: 100vh;
+    text-align: center;
+    text-shadow: 2px 2px 5px #333;
+    color: #fff;
+}
+header #clock{
+    font-size: 15em;
+}
+header #greeting{
+    font-size: 7em;
+}
+
+section{
+    height: 100vh;
+}
+section iframe{
+    height: 100%;
+    margin: 0;
+}
+.one-iframe iframe{
+    width:100%;
+}
+.two-iframe iframe{
+    width:50%;
+}
+.three-iframe iframe{
+    width:33%;
+}
+.four-iframe iframe{
+    width:25%;
+}
+
+#background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+#background img{
+    width: 100%;
+}
