@@ -36,9 +36,9 @@
         var today = new Date();
         var h = today.getHours();
         var m = today.getMinutes();
-        var s = today.getSeconds();
+//        var s = today.getSeconds();
         m = checkTime(m);
-        s = checkTime(s);
+//        s = checkTime(s);
         var pmam = h < 12 ? 'AM' : 'PM';
         document.getElementById('clock').innerHTML =
                 h%12 + ":" + m + ' <span id="pmam">' + pmam + '</span>'; // + ":" + s
