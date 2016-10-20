@@ -55,7 +55,7 @@ function getWeather(position)
             showWeather(JSON.parse(this.response));
         }
     };
-    var url = "https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&APPID=70e28cbfd09c43fb50059e727b9e0fa2";
+    var url = "http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&APPID=70e28cbfd09c43fb50059e727b9e0fa2";
     oReq.open("GET", url, true);
     oReq.send();
 }
