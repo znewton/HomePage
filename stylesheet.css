@@ -50,9 +50,18 @@ header{
 }
 header #clock{
     font-size: 15em;
+    margin-top: 10vh;
 }
 header #greeting{
     font-size: 7em;
+}
+header #weather{
+    font-size: 6em;
+    margin-top: 10vh;
+}
+header #weather > span{
+    font-size: 0.75em;
+    opacity: 0.75;
 }
 
 section{

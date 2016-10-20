@@ -17,8 +17,9 @@
 <div class="container">
     <div id="background"></div>
     <header id="home">
-        <h1 id="clock"></h1>
-        <h1 id="greeting"></h1>
+        <div id="clock"></div>
+        <div id="greeting"></div>
+        <div id="weather"></div>
     </header>
     <section id="koala_kontrol" class="three-iframe">
         <iframe src="https://www.youtube.com/embed/wlsdMpnDBn8" frameborder="0" allowfullscreen></iframe>
@@ -26,45 +27,12 @@
         <iframe src="https://www.youtube.com/embed/4KSlB-eA3u4" frameborder="0" allowfullscreen></iframe>
     </section>
     <section id="sheep_kontrol" class="one-iframe">
-        <iframe src="https://us.napster.com/embedded-player/?g=25A0862667FB6BB1E050960A38032719&ocode=social_user&pcode=social_user&cpath=Embed&rsrc=playlist#/playlists/mp.229306123" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLy_dRGlykKyu_1fA6VgB0kXlpvRTpyu1e" frameborder="0" allowfullscreen></iframe>
     </section>
     <section id="acoustic_cafe" class="one-iframe">
         <iframe src="https://us.napster.com/embedded-player/?g=25A0862667FB6BB1E050960A38032719&ocode=social_user&pcode=social_user&cpath=Embed&rsrc=playlist#/playlists/pp.222456619" frameborder="0" allowfullscreen></iframe>
     </section>
 </div>
-<script>
-    function startTime() {
-        var today = new Date();
-        var h = today.getHours();
-        var m = today.getMinutes();
-//        var s = today.getSeconds();
-        m = checkTime(m);
-//        s = checkTime(s);
-        var pmam = h < 12 ? 'AM' : 'PM';
-        document.getElementById('clock').innerHTML =
-                h%12 + ":" + m + ' <span id="pmam">' + pmam + '</span>'; // + ":" + s
-        var greeting = '';
-        if(h < 12){
-            greeting = 'Good Morning';
-        }
-        else if(h < 18){
-            greeting = 'Good Afternoon';
-        }
-        else{
-            greeting = 'Good Evening';
-        }
-        document.getElementById('greeting').innerHTML = greeting;
-        var t = setTimeout(startTime, 1000);
-    }
-    function checkTime(i) {
-        if (i < 10) {i = "0" + i}  // add zero in front of numbers < 10
-        return i;
-    }
-    startTime();
-    function getBackground(){
-        document.getElementById('background').innerHTML = "<img src=\"img/"+Math.floor(Math.random()*11+1)+".jpg\">";
-    }
-    getBackground();
-</script>
+<script type="application/javascript" src="app.js"></script>
 </body>
 </html>
