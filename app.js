@@ -44,7 +44,7 @@ function showPosition(position) {
     weather.innerHTML = "Latitude: " + position.coords.latitude +
         "<br>Longitude: " + position.coords.longitude;
 }
-getLocation();
+// getLocation();
 function getWeather(position)
 {
     var lat = position.coords.latitude;
